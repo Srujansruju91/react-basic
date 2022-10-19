@@ -3,14 +3,14 @@ import Employee from './Components/Employee';
 
 function App() {
   console.log("We are about to list the employee");
-  const showEmployees = false;
+  const showEmployees = true;
   return (
     <div className="App">
       {console.log('inside the return')}
       <header className="App-header">
         {showEmployees ? (
           <>
-            <Employee> </Employee>
+            <Employee name = "HP"> </Employee>
             <Employee />
           </>
         ) : (
