@@ -1,4 +1,4 @@
-import './App.css';
+import './index.css';
 import Employee from './Components/Employee';
 import { useState } from 'react';
 
@@ -7,9 +7,9 @@ function App() {
   console.log("We are about to list the employee");
   const showEmployees = true;
   return (
-    <div className="App">
+    <div className="App bg-red">
       {console.log('inside the return')}
-      <header className="App-header">
+      <header className="App-header bg-orange-500">
         {showEmployees ? (
           <>
           <input type='text' onChange={(e) => {
@@ -21,7 +21,7 @@ function App() {
             <Employee />
           </>
         ) : (
-          <p>
+           <p>
             Hello Nag's !!!!
             <br></br>
             Hello Mani !!!
